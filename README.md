@@ -1,4 +1,4 @@
-For Windows [my OS]:
+For Windows:
 0. Conda should be installed for managing python versions.
 1. Open Conda cmd and run "conda create -n cv_env python=3.9".
 2. Next navigate to folder with files using cd command and run "conda activate cv_env".
