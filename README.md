@@ -1,6 +1,6 @@
 For Windows [my OS]:
 1. Conda should be installed for managing python versions.
-2. Open Conda cmd and run "conda create -n cv_env python=3.9".
+2. Open Conda cmd and run "conda create -n cv_env python=3.8".
 3. Next navigate to folder with files using cd command and run "conda activate cv_env".
 4. Run command "pip install -r requirements.txt" to install needed modules.
 5. Run the code by the command "python demo.py".
