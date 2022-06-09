@@ -145,10 +145,11 @@ def head_pose():
     args = parser.parse_args()
 
     path_to_file = args.path_to_file
-    model_face_detect = (
-        "ssdlite_mobilenet_v2_face_300_integer_quant_with_postprocess.tflite"
-    )
-    model_head_pose = "head_pose_estimator_integer_quant.tflite"
+    
+    model_face_detect = pkg_resources.resource_filename("src", "ssdlite_mobilenet_v2_face_300_integer_quant_with_postprocess.tflite")
+
+    model_head_pose = pkg_resources.resource_filename("src", "head_pose_estimator_integer_quant.tflite")
+    
     image_width = 640
     image_height = 480
     num_threads = 1
