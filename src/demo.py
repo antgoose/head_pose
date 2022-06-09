@@ -146,6 +146,8 @@ def head_pose():
 
     path_to_file = args.path_to_file
     
+    path_to_file = pkg_resources.resource_filename("src", path_to_file)
+    
     model_face_detect = pkg_resources.resource_filename("src", "ssdlite_mobilenet_v2_face_300_integer_quant_with_postprocess.tflite")
 
     model_head_pose = pkg_resources.resource_filename("src", "head_pose_estimator_integer_quant.tflite")
