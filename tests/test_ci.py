@@ -5,8 +5,8 @@ import pkg_resources
 import numpy as np
 
 path_to_file = pkg_resources.resource_filename("tests", "reference.jpeg")
-path_to_big = pkg_resources.resource_filename("tests", "big_image.jpeg")
-path_to_small = pkg_resources.resource_filename("tests", "small_image.jpeg")
+path_to_big = "big_image.jpeg"
+path_to_small = "small_image.jpeg"
 tests_folder = "tests"
 
 
