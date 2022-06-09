@@ -3,4 +3,3 @@ opencv-python
 argparse
 tflite_runtime
 pytest
-pkg_resources
