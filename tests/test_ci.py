@@ -7,6 +7,7 @@ import numpy as np
 path_to_file = pkg_resources.resource_filename("tests", "reference.jpeg")
 path_to_big = pkg_resources.resource_filename("tests", "big_image.jpeg")
 path_to_small = pkg_resources.resource_filename("tests", "small_image.jpeg")
+tests_folder = "tests"
 
 
 def test_regression():
@@ -20,5 +21,5 @@ def test_regression():
     assert status == 0 # Do it because can't download file for regression due to opencv permission error
 
 def test_no_error():
-    head_pose(path_to_big)
-    head_pose(path_to_small)
+    head_pose(path_to_big, tests_folder)
+    head_pose(path_to_small, tests_folder)

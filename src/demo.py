@@ -135,7 +135,7 @@ def draw_annotation_box(
     )
 
 
-def head_pose(path_to_file="face_photo.jpeg"):
+def head_pose(path_to_file="face_photo.jpeg", folder="src"):
 
     '''
     parser = argparse.ArgumentParser()
@@ -146,7 +146,7 @@ def head_pose(path_to_file="face_photo.jpeg"):
     path_to_file = args.path_to_file
     '''
     
-    path_to_file = pkg_resources.resource_filename("src", path_to_file)
+    path_to_file = pkg_resources.resource_filename(folder, path_to_file)
     
     model_face_detect = pkg_resources.resource_filename("src", "ssdlite_mobilenet_v2_face_300_integer_quant_with_postprocess.tflite")
 
