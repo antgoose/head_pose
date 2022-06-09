@@ -1,5 +1,5 @@
 import pytest
-from demo import head_pose
+from src.demo import head_pose
 import cv2
 
 
