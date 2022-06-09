@@ -31,6 +31,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install requirements
         run: pip install -r requirements.txt
+        
+      - name: Go to project folder
+        run: cd src
 
       - name: Regression test
         run: pytest
