@@ -135,16 +135,16 @@ def draw_annotation_box(
     )
 
 
-def head_pose():
+def head_pose(path_to_file):
 
+    '''
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--path_to_file", default="face_photo.jpeg", help="Path to the file"
     )
-
     args = parser.parse_args()
-
     path_to_file = args.path_to_file
+    '''
     
     path_to_file = pkg_resources.resource_filename("src", path_to_file)
     
