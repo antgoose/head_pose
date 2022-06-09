@@ -1,0 +1,5 @@
+numpy==1.19
+opencv-python
+argparse
+tflite_runtime
+pytest
