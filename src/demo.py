@@ -135,7 +135,7 @@ def draw_annotation_box(
     )
 
 
-def head_pose(path_to_file):
+def head_pose(path_to_file="face_photo.jpeg"):
 
     '''
     parser = argparse.ArgumentParser()
