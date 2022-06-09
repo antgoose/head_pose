@@ -2,6 +2,7 @@ import pytest
 from src.demo import head_pose
 import cv2
 import pkg_resources
+import numpy as np
 
 
 def test_regression():
