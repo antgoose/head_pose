@@ -34,3 +34,7 @@ jobs:
         
       - name: Regression test
         run: pytest
+      
+      - name: Build
+        run: python -m build
+
