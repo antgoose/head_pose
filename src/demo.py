@@ -4,7 +4,7 @@ import time
 import sys
 import cv2
 import argparse
-from stabilizer import Stabilizer
+from .stabilizer import Stabilizer
 
 try:
     from tflite_runtime.interpreter import Interpreter
