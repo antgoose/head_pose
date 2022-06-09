@@ -168,7 +168,7 @@ def head_pose():
     )
 
     raw_value = []
-    with open("/src/model.txt") as file:
+    with open("model.txt") as file:
         for line in file:
             raw_value.append(line)
     model_points_68 = np.array(raw_value, dtype=np.float32)
