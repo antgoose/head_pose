@@ -3,3 +3,4 @@ opencv-python
 argparse
 tflite_runtime
 pytest
+build
