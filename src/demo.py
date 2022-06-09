@@ -4,6 +4,7 @@ import time
 import sys
 import cv2
 import argparse
+import pkg_resources
 from .stabilizer import Stabilizer
 
 try:
@@ -168,7 +169,8 @@ def head_pose():
     )
 
     raw_value = []
-    with open("model.txt") as file:
+    model_path = pkg_resources.resource_filename("src", "model.txt")
+    with open(model_path) as file:
         for line in file:
             raw_value.append(line)
     model_points_68 = np.array(raw_value, dtype=np.float32)
