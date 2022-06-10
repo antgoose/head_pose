@@ -7,7 +7,7 @@ RUN python3.8-venv
 RUN python3 -m pip install --upgrade pip \
     && python3 -m pip install build
 
-RUN cat .dockerignore
+RUN ls . 
 
 ADD artifacts/head-pose-package-antgoose-latest.whl /data
 
