@@ -3,7 +3,7 @@ FROM python:3.8 as builder
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN python3.8-venv
-	
+
 RUN python3 -m pip install --upgrade pip \
     && python3 -m pip install build
 
