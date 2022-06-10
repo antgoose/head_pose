@@ -2,7 +2,8 @@ FROM python:3.8 as builder
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get install -y --no-install-recommends \ 
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
 	python3.8-venv
 
 RUN python3 -m pip install --upgrade pip \
