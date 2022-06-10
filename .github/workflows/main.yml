@@ -36,16 +36,12 @@ jobs:
         run: pytest
 
       - name: Build
-        run: python -m build 
-        
-      - name: Set output variables
-        id: vars
-        run: |
-          echo ::set-output name=dir::"$GITHUB_ACTION_PATH/head_pose_package_antgoose-0.0.1-py3-none-any.whl'"
+        run: python -m build --outdir artifacts/
+=
 
       - name: Upload build results
         uses: actions/upload-artifact@v3
         with:
           name: head_pose_package_antgoose-0.0.1-py3-none-any.whl
-          path: ${{ steps.vars.outputs.dir }}
+          path: artifacts/head_pose_package_antgoose-0.0.1-py3-none-any.whl
           
