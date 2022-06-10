@@ -2,7 +2,7 @@ import os
 import sys
 import streamlit as st
 from PIL import Image
-from head_pose_package_antgoose-0.0.1-py3-none-any.demo import head_pose import head_pose
+from head_pose_package_antgoose-0.0.1-py3-none-any.demo import head_pose
 
 sys.path.append("../")
 
