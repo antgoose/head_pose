@@ -47,6 +47,6 @@ jobs:
       - name: Upload build results
         uses: actions/upload-artifact@v3
         with:
-          name: head-pose-package-antgoose
+          name: head-pose-package-antgoose-$GITHUB_RUN_ID
           path: artifacts/
           
