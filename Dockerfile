@@ -13,7 +13,7 @@ RUN python3.8 -m pip install streamlit
 
 WORKDIR /demo	
 
-COPY src/strlit_demo.py /demo/
+COPY strlit_demo/strlit_demo.py /demo/
 
 EXPOSE 8501
 
