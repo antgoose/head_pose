@@ -36,10 +36,10 @@ jobs:
         run: pytest
 
       - name: Build
-        run: python -m build
+        run: python -m build 
 
       - name: Upload build results
         uses: actions/upload-artifact@v3
         with:
           name: head_pose_package_antgoose-0.0.1-py3-none-any.whl
-          path: head_pose_package_antgoose-0.0.1-py3-none-any.whl
+          path: /home/runner/work/head_pose/head_pose/dist/tmp*/head_pose_package_antgoose-0.0.1-py3-none-any.whl
