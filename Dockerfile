@@ -7,7 +7,7 @@ RUN python3 -m pip install --upgrade pip \
 
 COPY artifacts/head_pose_package_antgoose-0.0.1-py3-none-any.whl /data	
 
-RUN  python3.8 -m pip install /data/head-pose-package-antgoose-latest.whl
+RUN  python3.8 -m pip install /data/head_pose_package_antgoose-0.0.1-py3-none-any.whl
 
 RUN python3.8 -m pip install streamlit
 
