@@ -38,9 +38,15 @@ jobs:
       - name: Build
         run: python -m build --outdir artifacts/
 
-      - name: Upload build results
+      - name: Upload build results (.whl)
         uses: actions/upload-artifact@v3
         with:
           name: head_pose_package_antgoose-0.0.1-py3-none-any.whl
           path: artifacts/head_pose_package_antgoose-0.0.1-py3-none-any.whl
+          
+      - name: Upload build results
+        uses: actions/upload-artifact@v3
+        with:
+          name: head-pose-package-antgoose
+          path: artifacts/
           
