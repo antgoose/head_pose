@@ -17,10 +17,10 @@ RUN python3.8 -m pip install streamlit
 
 WORKDIR /demo	
 
-COPY web_demo /demo/
+COPY src/strlit_demo.py /demo/
 
 EXPOSE 8501
 
 ENTRYPOINT ["streamlit", "run"]
 
-CMD ["web_demo.py"]
+CMD ["strlit_demo.py"]
