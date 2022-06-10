@@ -46,6 +46,6 @@ jobs:
        
       - name: Build the Docker image
         run: |
-          docker login docker.io -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin "${{ secrets.DOCKER_HUB_TOKEN }}"
+          docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" -p "${{ secrets.DOCKER_HUB_TOKEN }}" docker.io 
           docker build . --file Dockerfile --tag docker.io/${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrets.DOCKER_HUB_REPOSITORY }}:$GITHUB_SHA
           docker push docker.io/${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrets.DOCKER_HUB_REPOSITORY }}:$GITHUB_SHA
