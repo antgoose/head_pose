@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN python3 -m pip install --upgrade pip \
     && python3 -m pip install build
 
-COPY artifacts/head_pose_package_antgoose-0.0.1-py3-none-any.whl /data	
+COPY artifacts/head_pose_package_antgoose-0.0.1-py3-none-any.whl .
 
 RUN python3.8 -m pip install head_pose_package_antgoose-0.0.1-py3-none-any.whl
 
