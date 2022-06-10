@@ -34,9 +34,6 @@ jobs:
 
       - name: Regression test
         run: pytest
-        
-      - name: Delete old builds
-        run: rm -r artifacts
 
       - name: Build
         run: python -m build --outdir artifacts/
