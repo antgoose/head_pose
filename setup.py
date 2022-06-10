@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="head-pose-package-antgoose",
+    name="head_pose_package_antgoose",
     version="0.0.1",
     author="Anton Gusev",
     author_email="asgusev_1@edu.hse.ru",
