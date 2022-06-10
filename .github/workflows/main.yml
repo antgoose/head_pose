@@ -47,6 +47,6 @@ jobs:
       - name: Upload build results
         uses: actions/upload-artifact@v3
         with:
-          name: head-pose-package-antgoose ${{ matrix.node-version }}
+          name: head-pose-package-antgoose ${{ github.run_id }}
           path: artifacts/
           
