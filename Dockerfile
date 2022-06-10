@@ -7,9 +7,7 @@ RUN python3.8-venv
 RUN python3 -m pip install --upgrade pip \
     && python3 -m pip install build
 
-RUN ls . 
-
-ADD artifacts/head-pose-package-antgoose-latest.whl /data
+ADD ./head-pose-package-antgoose-latest.whl /data
 
 RUN  python3.8 -m pip install head-pose-package-antgoose-latest.whl
 
