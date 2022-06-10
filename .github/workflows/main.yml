@@ -37,7 +37,6 @@ jobs:
 
       - name: Build
         run: python -m build --outdir artifacts/
-=
 
       - name: Upload build results
         uses: actions/upload-artifact@v3
