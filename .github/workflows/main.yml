@@ -41,7 +41,7 @@ jobs:
       - name: Set output variables
         id: vars
         run: |
-          echo ::set-output name=dir::$(find . -path '/home/runner/work/head_pose/head_pose/dist/tmp*/head_pose_package_antgoose-0.0.1-py3-none-any.whl')
+          echo ::set-output name=dir::"${{ github.action_path }}/head_pose_package_antgoose-0.0.1-py3-none-any.whl'"
 
       - name: Upload build results
         uses: actions/upload-artifact@v3
