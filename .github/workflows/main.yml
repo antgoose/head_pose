@@ -34,9 +34,9 @@ jobs:
         
       - name: Regression test
         run: pytest
-               
-      - name: Build
-        run: python -m build
+        
+      - name: Artifacts
         path: build/libs/
         
-        
+      - name: Build
+        run: python -m build        
