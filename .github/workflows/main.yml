@@ -31,10 +31,16 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install requirements
         run: pip install -r requirements.txt
-        
+
       - name: Regression test
         run: pytest
-      
-      - name: Build
-        run: python -m build
 
+      - name: Build
+        run: python -m build --outdir artifacts/
+          
+      - name: Upload build results
+        uses: actions/upload-artifact@v3
+        with:
+          name: head-pose-package-antgoose ${{ github.run_id }}
+          path: artifacts/
+          
